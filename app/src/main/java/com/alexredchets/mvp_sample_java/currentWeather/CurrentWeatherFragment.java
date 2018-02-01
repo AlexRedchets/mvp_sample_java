@@ -16,7 +16,9 @@ public class CurrentWeatherFragment extends Fragment implements CurrentWeatherPr
         super.onCreate(savedInstanceState);
 
         presenter = new CurrentWeatherPresenterImpl();
+
         presenter.setView(this);
+
         presenter.loadData(getContext());
     }
 
