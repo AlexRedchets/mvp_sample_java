@@ -26,4 +26,9 @@ public class CurrentWeatherFragment extends Fragment implements CurrentWeatherPr
     public void onDataReceived(WeatherCurrent data) {
         Toast.makeText(getContext(), "Data received", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onDataError() {
+        Toast.makeText(getContext(), "Error. Try later.", Toast.LENGTH_SHORT).show();
+    }
 }

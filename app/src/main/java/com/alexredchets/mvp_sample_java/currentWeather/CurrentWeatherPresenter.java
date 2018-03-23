@@ -13,5 +13,6 @@ public class CurrentWeatherPresenter {
 
     interface View {
         void onDataReceived(WeatherCurrent data);
+        void onDataError();
     }
 }
